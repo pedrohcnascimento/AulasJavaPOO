@@ -3,8 +3,8 @@ package com.senai.aula04_herancas.exercicios.exercicio1;
 public class Alimento extends Produto{
     private String dataDeValidade;
 
-    public Alimento(double preco, int quantidade, String dataDeValidade) {
-        super(preco, quantidade);
+    public Alimento(int id, String nome, double preco, int quantidade, String dataDeValidade) {
+        super(id, nome, preco, quantidade);
         this.dataDeValidade = dataDeValidade;
     }
 
@@ -14,5 +14,11 @@ public class Alimento extends Produto{
 
     public void setDataDeValidade(String dataDeValidade) {
         this.dataDeValidade = dataDeValidade;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()
+            + "Data de validade: " + getDataDeValidade();
     }
 }
