@@ -3,16 +3,24 @@ package com.senai.aula04_herancas.exercicios.exercicio4;
 public class PacienteParticular extends Paciente{
     private double custoConsulta;
 
-    public PacienteParticular(String nome, int idade, double custoConsulta) {
-        super(nome, idade);
+    public PacienteParticular(long id, String nome, int idade, double custoConsulta) {
+        super(id, nome, idade);
         this.custoConsulta = custoConsulta;
     }
 
-    public double getCustoConsulta() {
+    @Override
+    public double getAtributo() {
         return custoConsulta;
     }
 
-    public void setCustoConsulta(double custoConsulta) {
-        this.custoConsulta = custoConsulta;
+    @Override
+    public void setAtributo(double atributo) {
+        this.custoConsulta = atributo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+
+                "Custo da consulta: " + custoConsulta;
     }
 }
