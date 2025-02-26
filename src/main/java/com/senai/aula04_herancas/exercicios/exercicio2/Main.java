@@ -47,7 +47,7 @@ public class Main {
         } while (opcao != 0);
     }
     public static void cadastrarFuncionario(){
-        System.out.println("O Funcionário é um alimento ou eletrônico?");
+        System.out.println("O Funcionário é um coordenador ou professor?");
         System.out.println("""
                 1- Coordenador
                 2- Professor
@@ -60,6 +60,7 @@ public class Main {
             novoFuncionario.setNome(scanner.nextLine());
             System.out.println("Digite o salário do funcionário:");
             novoFuncionario.setSalario(scanner.nextDouble());
+            scanner.nextLine();
             System.out.println("Digite qual a equipe de professores ele é responsável:");
             novoFuncionario.setAtributo(scanner.nextLine());
             listaFuncionarios.add(novoFuncionario);
@@ -70,7 +71,8 @@ public class Main {
             novoFuncionario.setNome(scanner.nextLine());
             System.out.println("Digite o salário do funcionário:");
             novoFuncionario.setSalario(scanner.nextDouble());
-            System.out.println("Digite a quantidade adicionada ao estoque:");
+            scanner.nextLine();
+            System.out.println("Digite a disciplina do funcionário:");
             novoFuncionario.setAtributo(scanner.nextLine());
             listaFuncionarios.add(novoFuncionario);
             qtdFuncionarios++;
