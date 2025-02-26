@@ -8,11 +8,19 @@ public class PedidoPresencial extends Pedido{
         this.descontoAVista = descontoAVista;
     }
 
-    public double getDescontoAVista() {
+    @Override
+    public double getAtributo() {
         return descontoAVista;
     }
 
-    public void setDescontoAVista(double descontoAVista) {
-        this.descontoAVista = descontoAVista;
+    @Override
+    public void setAtributo(double atributo) {
+        this.descontoAVista = atributo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()
+                +"Desconto a vista: "+ descontoAVista;
     }
 }
