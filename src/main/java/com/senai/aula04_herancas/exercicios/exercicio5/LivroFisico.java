@@ -1,18 +1,26 @@
 package com.senai.aula04_herancas.exercicios.exercicio5;
 
 public class LivroFisico extends Livro{
-    private int numeroDePaginas;
+    private double numeroDePaginas;
 
-    public LivroFisico(String titulo, String autor, int numeroDePaginas) {
-        super(titulo, autor);
+    public LivroFisico(long id, String titulo, String autor, double numeroDePaginas) {
+        super(id, titulo, autor);
         this.numeroDePaginas = numeroDePaginas;
     }
 
-    public int getNumeroDePaginas() {
+    @Override
+    public double getAtributo() {
         return numeroDePaginas;
     }
 
-    public void setNumeroDePaginas(int numeroDePaginas) {
-        this.numeroDePaginas = numeroDePaginas;
+    @Override
+    public void setAtributo(double atributo) {
+        this.numeroDePaginas = atributo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+
+                "Número de páginas: "+ numeroDePaginas;
     }
 }
