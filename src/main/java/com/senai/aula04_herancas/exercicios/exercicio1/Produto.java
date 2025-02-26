@@ -5,12 +5,21 @@ public class Produto {
     private String nome;
     private double preco;
     private int quantidade;
+    private String atributo;
 
     public Produto(int id, String nome, double preco, int quantidade) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
+    }
+
+    public String getAtributo() {
+        return atributo;
+    }
+
+    public void setAtributo(String atributo) {
+        this.atributo = atributo;
     }
 
     public int getId() {

@@ -1,24 +1,26 @@
 package com.senai.aula04_herancas.exercicios.exercicio1;
 
 public class Eletronico extends Produto{
-    private int voltagem;
+    private String voltagem;
 
-    public Eletronico(int id, String nome, double preco, int quantidade, int voltagem) {
+    public Eletronico(int id, String nome, double preco, int quantidade, String voltagem) {
         super(id, nome, preco, quantidade);
         this.voltagem = voltagem;
     }
 
-    public int getVoltagem() {
+    @Override
+    public String getAtributo() {
         return voltagem;
     }
 
-    public void setVoltagem(int voltagem) {
-        this.voltagem = voltagem;
+    @Override
+    public void setAtributo(String atributo) {
+        this.voltagem = atributo;
     }
 
     @Override
     public String toString() {
         return super.toString()
-                + "Voltagem" + getVoltagem();
+                + "Voltagem: " + this.voltagem;
     }
 }

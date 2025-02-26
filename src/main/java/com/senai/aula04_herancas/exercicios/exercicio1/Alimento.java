@@ -8,17 +8,19 @@ public class Alimento extends Produto{
         this.dataDeValidade = dataDeValidade;
     }
 
-    public String getDataDeValidade() {
+    @Override
+    public String getAtributo() {
         return dataDeValidade;
     }
 
-    public void setDataDeValidade(String dataDeValidade) {
-        this.dataDeValidade = dataDeValidade;
+    @Override
+    public void setAtributo(String atributo) {
+        this.dataDeValidade = atributo;
     }
 
     @Override
     public String toString() {
         return super.toString()
-            + "Data de validade: " + getDataDeValidade();
+            + "Data de validade: " + getAtributo();
     }
 }
