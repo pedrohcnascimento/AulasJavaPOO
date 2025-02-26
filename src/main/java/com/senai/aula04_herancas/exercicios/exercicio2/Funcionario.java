@@ -1,10 +1,29 @@
 package com.senai.aula04_herancas.exercicios.exercicio2;
 
 public class Funcionario {
+    private int id;
     private String nome;
     private double salario;
+    private String atributo;
 
-    public Funcionario(String nome, double salario) {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getAtributo() {
+        return atributo;
+    }
+
+    public void setAtributo(String atributo) {
+        this.atributo = atributo;
+    }
+
+    public Funcionario(int id, String nome, double salario) {
+        this.id = id;
         this.nome = nome;
         this.salario = salario;
     }
