@@ -11,6 +11,6 @@ public class Main {
         listaPagamentos.add(new PJ("Pedro",200,50));
         listaPagamentos.add(new Freelancer("Joana",100000));
 
-        listaPagamentos.forEach(p -> System.out.println(p.getNome()+p.calcularPagamento()));
+        listaPagamentos.forEach(p -> System.out.println(p.getNome()+": "+p.calcularPagamento()));
     }
 }
