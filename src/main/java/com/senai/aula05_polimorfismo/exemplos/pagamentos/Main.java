@@ -1,15 +1,16 @@
 package com.senai.aula05_polimorfismo.exemplos.pagamentos;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        Pagamento[] pagamentos = {
-                new CLT("Marcos",5000),
-                new PJ("Julia",160,50),
-                new Freelancer("Roberto",4000)
-        };
+        List<Pagamento> listaPagamentos = new ArrayList<>();
 
-        for (Pagamento p : pagamentos){
-            System.out.printf(p.getNome()+" recebe R$"+p.calcularPagamento());
-        }
+        listaPagamentos.add(new CLT("Rafael",1000));
+        listaPagamentos.add(new PJ("Pedro",200,50));
+        listaPagamentos.add(new Freelancer("Joana",100000));
+
+        listaPagamentos.forEach(p -> System.out.println(p.calcularPagamento()));
     }
 }
