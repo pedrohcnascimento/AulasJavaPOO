@@ -56,7 +56,7 @@ public class Main {
         opcaoCadastro = scanner.nextInt();
         scanner.nextLine();
         if (opcaoCadastro == 1){
-            PacienteConvenio novoPaciente = new PacienteConvenio(qtdPacientes,"",0,0);
+            Paciente novoPaciente = new PacienteConvenio(qtdPacientes,"",0,0);
             System.out.println("Por favor, digite o nome do paciente:");
             novoPaciente.setNome(scanner.nextLine());
             System.out.println("Digite a idade do paciente:");
@@ -66,7 +66,7 @@ public class Main {
             listaPacientes.add(novoPaciente);
             qtdPacientes++;
         }else if (opcaoCadastro == 2){
-            PacienteParticular novoPaciente = new PacienteParticular(qtdPacientes,"",0,0);
+            Paciente novoPaciente = new PacienteParticular(qtdPacientes,"",0,0);
             System.out.println("Por favor, digite o nome do paciente:");
             novoPaciente.setNome(scanner.nextLine());
             System.out.println("Digite a idade do paciente: ");
