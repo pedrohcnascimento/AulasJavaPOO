@@ -5,14 +5,14 @@ public class Main {
         Cachorro cachorro = new Cachorro("Rex");
         Gato gato = new Gato("Whiskey");
 
-        cachorro.dormir();
-        cachorro.fazerSom();
+        Animal animal = cachorro;
 
-        System.out.println("--------------------");
-
-        gato.dormir();
-        gato.fazerSom();
-
-        System.out.println("--------------------");
+        emitirSom(cachorro);
+        emitirSom(gato);
+        emitirSom(animal);
+    }
+    public static void emitirSom(Animal animal){
+        animal.dormir();
+        animal.fazerSom();
     }
 }
