@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.veiculos;
+package com.senai.aula06_abstracao.exemplos_classes.veiculos;
 
 abstract class Veiculo {
     int velocidade;

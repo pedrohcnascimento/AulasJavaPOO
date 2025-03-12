@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.animal;
+package com.senai.aula06_abstracao.exemplos_classes.animal;
 
 abstract class Animal {
     String nome;

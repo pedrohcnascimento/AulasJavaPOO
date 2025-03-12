@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.veiculos;
+package com.senai.aula06_abstracao.exemplos_classes.veiculos;
 
 public class Main {
     public static void main(String[] args) {
