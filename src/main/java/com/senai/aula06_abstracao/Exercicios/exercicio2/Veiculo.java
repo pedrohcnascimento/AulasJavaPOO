@@ -1,9 +1,15 @@
 package com.senai.aula06_abstracao.Exercicios.exercicio2;
 
 public abstract class Veiculo {
-    int velocidadeAtual;
+    double velocidadeAtual;
     protected double capacidadeMaximaCarga;
     protected int distanciaDestinoKM;
+
+    public Veiculo(int velocidadeAtual, double capacidadeMaximaCarga, int distanciaDestinoKM) {
+        this.velocidadeAtual = velocidadeAtual;
+        this.capacidadeMaximaCarga = capacidadeMaximaCarga;
+        this.distanciaDestinoKM = distanciaDestinoKM;
+    }
 
     public void verificarVelocidadeAtual(){
         System.out.println("A velocidade atual é: " + velocidadeAtual);
